@@ -6,11 +6,8 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
-<<<<<<< HEAD
     aboutDaniel: String
-=======
     aboutDylan: String
->>>>>>> taller_dilan
   }
 `;
 
