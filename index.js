@@ -6,6 +6,7 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
+    aboutDiana: String
   }
 `;
 
@@ -15,7 +16,7 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
     },
-    AboutDiana: () => { 
+    aboutDiana: () => { 
       return 'Hola, Soy Diana y me gusta el baloncesto'
     }
   },
