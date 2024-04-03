@@ -14,7 +14,10 @@ const resolvers = {
   Query: {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
-      },
+    },
+    AboutDiana: () => { 
+      return 'Hola, Soy Diana y me gusta el baloncesto'
+    }
   },
 };
 
